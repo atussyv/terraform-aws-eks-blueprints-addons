@@ -98,6 +98,7 @@ variable "argocd" {
   description = "ArgoCD add-on configuration values"
   type        = any
   default     = {}
+  ephemeral   = true
 }
 
 ################################################################################

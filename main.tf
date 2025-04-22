@@ -181,8 +181,7 @@ module "argo_workflows" {
 ################################################################################
 
 module "argocd" {
-  source  = "aws-ia/eks-blueprints-addon/aws"
-  version = "1.1.1"
+  source  = "git::https://github.com/atussyv/terraform-aws-eks-blueprints-addon.git?ref=sensitive-values-accept-ephemeral-input"
 
   create = var.enable_argocd
 
